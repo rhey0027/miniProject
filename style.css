@@ -41,15 +41,17 @@
     }
 }
 /* about us */
-
-.about {
+.about,
+.featured_products {
     background-color: #F8EFFA ;
+}
+.about_msg {
+    line-height: 2;
 }
 .paragraph {
     line-height: 30px;
     margin-left: 40px;
 }
-/* footer */
 a {
     text-decoration: none !important;
     color: #000 !important;
@@ -60,9 +62,9 @@ ul {
 #different li {
     list-style: disc;
 }
+/* footer */
 .footer {
     background-color: #FFE5F1;
-    height: 550px;
 }
 .form-control-footer {
     width: 400px;
@@ -95,7 +97,7 @@ ul {
 #footer2 {
     margin-left: 80px;
 }
-.footer_link ul li a:hover {
+.footer_links ul li a:hover {
     opacity: 0.8;
 }
 .socials_footer i {
@@ -103,6 +105,9 @@ ul {
     font-size: 25px;
     margin-left: 10px;
     transition: all 0.2s ease;
+}
+.list2 {
+    margin-left: 50px;
 }
 .socials_footer i:hover {
     opacity: 0.6;
@@ -113,4 +118,10 @@ ul {
 ::placeholder {
     color: #a09a9a;
     padding-left: 10px;
+}
+li {
+    margin-bottom: 15px;
+}
+#unlist li {
+    margin: 0;;
 }
