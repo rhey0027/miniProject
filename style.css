@@ -67,6 +67,18 @@ li {
     font-size: 18px;
     cursor: pointer;
 }
+/*signup-login*/
+.form-signup{
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.form-signup h2{
+    text-align: center;
+}
+
+
+
 /* carousel */
 
 /* best seller */

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Rhey Yu | Romeo Agacita">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="logo/cakelogo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <title>Mini Project 2023</title>
+</head>
+<body>
+ <!-- Navbar section -->
+ <div class="header">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container menu-bar">
+        <button class="navbar-toggler" type="button" 
+              data-toggle="collapse" data-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" 
+              aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+          <a class="navbar-brand" href="index.html"><img src="logo/logo3.png"></a>
+            <div class="order-lg-1 nav_social">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-shopping-cart"></i>
+                <i class="fa fa-user"></i>
+            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto text-center fs-6 fw-bold pt-3">
+                  <li class="nav-item px-2 py-2 p">
+                    <a class="nav-link text-uppercase text-dark" href="#header">
+                      Cakes</a>
+                  </li>
+                  <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark"  href="category.html">
+                      Category</a>
+                  </li>
+                  <li class="nav-item px-2 py-2">
+                    <a class="nav-link text-uppercase text-dark" href="about.html">
+                      about us</a>
+                  </li>
+                  <li class="nav-item px-2 py-2 border-0">
+                    <a class="nav-link text-uppercase text-dark" href="faq.html">
+                      FAQ</a>
+                  </li>
+            </ul>   
+        </div>
+    </nav>
+  </div>
+</div>
+ <!-- navbar ends here -->
+<!-- sign up/login form -->
+ <div style="padding-top: 250px; padding-bottom: 250px;" class="container">
+    <form class="form-signup"> 
+        <h2 style="padding-bottom: 60px;">Register New User</h2>
+    <div class="form-group"> 
+        <div class="row">
+        <div style="padding-bottom: 25px;" class="form-group">
+            <input style="background-color: #FFF8F8; border-bottom: 1px solid; border-radius: 0;" type= "text" name="First Name" class="form-control" placeholder= "First Name"> 
+        </div>
+        <div style="padding-bottom: 25px;"  class="form-group">
+            <div class="form-group">
+                <input style="background-color: #FFF8F8; border-bottom: 1px solid; border-radius: 0;" type= "text" name="Last Name" class="form-control" placeholder= "Last Name"> 
+            </div>
+        </div>
+    </div> 
+    </div>
+    <div  style="padding-bottom: 25px;"  class="form-group">
+        <input style="background-color: #FFF8F8; border-bottom: 1px solid; border-radius: 0;" type="email" name="email" class="form-control" placeholder="Email Address"> 
+    </div> 
+    <div style="padding-bottom: 25px;"  class="form-group">
+        <input style="background-color: #FFF8F8; border-bottom: 1px solid; border-radius: 0;" type= "password" name="password" class="form-control" placeholder= "Password">
+        
+    </div> 
+    <div style="padding-bottom: 25px;"  class="form-group">
+        <input style="background-color: #FFF8F8; border-bottom: 1px solid; border-radius: 0;" type="password" class="form-control" name="confirm_password" placeholder="Confirm Password">
+     </div> 
+     <div class="form-group">
+        <label>
+            <input type="checkbox" name="">
+            I accept the <a href="#">Terms of Use</a> & <a href="">Privacy Policy</a> 
+        </label>
+    </div>
+    <div style="padding-top: 20px;" class="d-grid gap-2 ">
+        <button style="background-color: #FFA217;" class="btn btn-primary btn-lg" type="button">Create</button>
+      </div>
+</form>
+</div>
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row mx-sm-2 mx-md-0 ">
+            <div class="col-lg-8 col-md-12 mb-4 mb-md-0">
+                <h2 class="fw-bolder pt-4" id="subscribe">Subscribe Now!</h2>
+                <p class="lead">for the latest offer, promos & discount</p>
+                 <input type="text" class="form-control-footer" placeholder="Enter Email"/>
+                <button class="btn_footer">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+                <div class="footer_links d-flex">
+                    <ul class="list pt-4 p-0">
+                        <li><a href="home">Home</a></li>
+                        <li><a href="#occasion">Occasion</a></li>
+                        <li><a href="#about us">About Us</a></li>
+                        <li><a href="#cakes">Cakes</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                    <ul class="list pt-4 list2">
+                        <li><a href="#Privacy Policy">Privacy Policy</a></li>
+                        <li><a href="#Legal">Legal</a></li>
+                        <li><a href="#Return & Refund">Return & Refund</a></li>
+                        <li><a href="#Order tracking">Order Tracing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <div class="d-flex pt-4">
+                    <h2 class="fw-bold footer-list-title">Contact Info</h2>
+                </div>
+                <div class="contact_details pt-4">
+                    <h4 class="mobile fw-bold">Mobile&#58;</h4>
+                    <p>0915-125-4125 | 0915-125-4125</p>
+                    <h4 class="fw-bold">e-mail&#58;</h4>
+                    <p>sweetcakealabama@hotmail.com</p>
+                    <h4 class="fw-bold">address&#58;</h4>
+                    <p>Muholland Drive, 10 Cloverfield Lane, Lost Highway City</p>
+                </div>
+                <div class="socials_footer">
+                    <p class="follow fw-bold">FOLLOW US&#58;</p>
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+        <div class="lower_footer text-center fs-6">
+            <p class="copyright">&copy; 2023 | <a href="#home" class="text-primary">Sweet Cake Alabama</a> | Online Birthday Cake, Chocolate Cake and Corporate Cake Catering. Delivery in the Philippines</p>
+        </div>
+  </footer>
+  <script src="script.js"></script>
+  </body>
+  </html>
