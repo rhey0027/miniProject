@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +7,6 @@
 }
 a {
     text-decoration: none !important;
-    color: #000 !important;
 }
 ul {
     list-style: none;
@@ -21,6 +21,7 @@ li {
     --fourth-color: #fff8e1;
     --fifth-color: #F8EFFA;
     --light-color: #fff;
+    --dark-blue:#0c0c3b;
     --black: #000;
     --dark: #333;
     --botton: #645cbb;
@@ -37,8 +38,11 @@ li {
 .navbar-nav a {
     transition: all 0.2s ease;
 }
-.navbar-nav li a:hover {
-  padding: 3px;
+.nav-item a:hover {
+    opacity: 0.6;
+}
+.navbar-toggler {
+    border: none;
 }
 .navbar-brand img{
     margin-left: 80px;
@@ -123,7 +127,15 @@ li {
 }
 /* best seller */
 .best_seller {
-    background-color: var(--fifth-color);
+    /* background-color: var(--fifth-color); */
+    background-image: url(logo/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+ #sweeter p,
+ .subtitle {
+    font-family: 'Marck Script', cursive;
 }
 .card-img {
     cursor: pointer;
@@ -131,6 +143,24 @@ li {
 }
 .card-img:hover {
     transform: scale(1.1);
+}
+.card-body p {
+    color: var(--dark-blue);
+}
+.img_heart .fa-heart {
+    position: absolute;
+    top: 1.3rem;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    color: red;
+    background-color: lightpink;
+}
+.img_heart .fa-heart:hover {
+    background-color:red;
+    color: var(--light-color);
 }
 /* about us */
 .about,
@@ -141,19 +171,16 @@ li {
     line-height: 2;
 }
 .paragraph {
-    line-height: 30px;
-    margin-left: 40px;
+     margin-left: 40px;
 }
 #different li {
     list-style: disc;
 }
-
 /* frequently asked */
-
 /* footer */
 .footer {
     background-color: #FFE5F1;
- } 
+} 
 .form-control-footer {
     width: 400px;
     border: none;
@@ -172,11 +199,18 @@ li {
 .footer_link ul li {
     padding-top: 20px;
 }
+#links ul li a {
+    color: var(--black);
+}
 #footer2 {
     margin-left: 80px;
 }
+.footer_links ul li a {
+    opacity: 0.6;
+    transition: all 0.3s ease;
+}
 .footer_links ul li a:hover {
-    opacity: 0.8;
+    opacity: 1;
 }
 .socials_footer i {
     color: #000;
@@ -190,6 +224,10 @@ li {
 .lower_footer {
     opacity: 0.7;
 }
+.lower_footer p {
+    margin-bottom: 0;
+    padding-bottom: 15px;
+}
 ::placeholder {
     color: #a09a9a;
     padding-left: 10px;
@@ -200,9 +238,32 @@ li {
 #unlist li {
     margin: 0;;
 }
-
+/* tooltip */
+.btn_footer .tooltip {
+    position: absolute;
+    background-color: var(--fourth-color);
+    width: 70px;
+    height: 27px;
+    padding: 5px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    border-radius: 3px;
+    font-size: 12px;
+    opacity: 0;
+    font-weight: bold;
+    color: var(--black);
+    pointer-events: none;
+    box-shadow: var(--box-shadow);
+}
+.btn_footer:hover .tooltip {
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+.bi-chevron-right:hover {
+    color: orangered;
+}
 /* back to top */
-
 .back-top-btn {
     position: fixed;
     bottom: 20px;
@@ -211,7 +272,7 @@ li {
     padding: 10px;
     color: var(--botton);
     border-radius: 50%;
-    z-index: 2;
+    z-index: 1;
     opacity: 1;
     visibility: hidden;
 }
@@ -223,10 +284,17 @@ li {
     visibility: visible;
     transform: translateY(-10px);
 }
-.back-top-btn :is(:hover, :focus) {
-   color: var(--botton);
-   
+.back-top-btn:hover {
+   color:orangered;
  }  
+ /* modal */
+ #btn-modal {
+    background-color: blueviolet;
+    color: var(--light-color);
+ }
+ #btn-modal:hover {
+    background-color: #a862e9;
+ }
 @media only screen and (max-width: 1000px) {
     .nav-link:hover{
         border-bottom: none!important;
