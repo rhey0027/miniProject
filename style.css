@@ -77,6 +77,49 @@ li {
     text-align: center;
 }
 
+.form-signup h3{
+    text-align: left;
+}
+
+.social-icons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+.facebook{
+    background-color: #385998;
+}
+.instagram{
+    background: linear-gradient(rgb(243,5,171),rgb(205,95,4),yellow);
+}
+.twitter
+{
+    background-color: #00ACEE;
+}
+.google
+{
+    background-color: #CA3224;
+}
+.linkedin{
+    background-color: #0E76AB;
+}
+ input:focus,input:hover,input:active
+ {
+     outline: none;
+ }
+
 
 
 /* carousel */
