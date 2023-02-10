@@ -64,7 +64,7 @@
     <div class="container">
         <div class="featured_products pt-5">
             <div class="col-md-3">
-                <h4 class="text-center">Featured Products</h4>
+                <h4 class="">Featured Products</h4>
             </div>
             <div class="row">
                 <div class="col-sm mb-4">
@@ -106,43 +106,54 @@
 <!-- about us -->
 <section class="about">
     <div class="container">
-        <div class="row">
-            <h2 class="fw-bold">About Us</h2>
-            <div class="col-lg-4 col-md-12">
-                <div class="card">
-                    <img src="icons/cake ingredients2.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-lg-8 col-md-12">
-                <div class="aboutJ_details">
-                    <p class="about_msg">We specialized in creating delicious cakes using fresh ingredients and bringing out their finest to our dessert selection. <br>
+        <div class="row align-items-center justify-content-between">
+            <div class="col-md">
+                <h2 class="fw-bold">About Us</h2>
+                <img src="icons/cake ingredients2.jpg" class="img-fluid" alt="">
+             </div>
+            <div class="col-md">
+                <div class="aboutj_details">
+                    <p class="about_msg pt-5">We specialized in creating delicious cakes using fresh ingredients and bringing out their finest to our dessert selection. <br>
                     We only use the freshest and finest ingredients in our cakes and pastries, including real butter
                     fresh free range eggs, 100% Cow diary whipped cream, and cacao chocolate. <br>
                     Each cake and pastry are handcrafted the moment you order, our handcrafted cakes are delicious works of edible art!<br>
                     And we would like that experience being shared to you and your guests. Right now our delivery is within the Philippines.</p>
                 </div>
             </div>
-            <div class="col-lg-8 col-md-12 pt-5">
-                <div class="aboutJ_details">
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <div class="row row align-items-center justify-content-between">
+            <div class="col-md pt-5">
+                <div class="aboutj_details">
                     <p class="about_msg">Whether you need a birthday cake, graduation cake, anniversary cake, wedding cake, or a cake for another special occasion, we have a cake for every celebration..</p>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-12">
-                <div class="card bg-transparent border-0">
-                    <img src="icons/choco.png" alt="">
-                </div>
+            <div class="col-md">
+                <img src="icons/choco.png" class="img-fluid" alt="">
             </div>
-            <div class="col-lg-12 mb-3">
-                <div class="difference">
-                    <h2 class="diff fw-bold">Our Differences&#58;</h2>
-                </div>
-                <div class="unlist pt-3 px-3" id="unlist">
-                    <li><b>Simple&#58;</b> Our cakes are freshly baked specifically for each order</li>
-                    <li><b>Quality&#58;</b> Only the freshest and finest ingredients are used in our cakes and pastries.</li>
-                    <li><b>Local&#58;</b> We support local farms where ever possible.</li>
-                    <li><b>Passion&#58;</b> Our employees from pastry chef to delivery staff are committed in heart</li>
-                </div>
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <div class="col-md-12 mb-3">
+            <div class="difference">
+                <h2 class="diff fw-bold">Our Differences&#58;</h2>
             </div>
+            <div class="unlist pt-3 px-3" id="unlist">
+                <li><b>Simple&#58;</b> Our cakes are freshly baked specifically for each order</li>
+                <li><b>Quality&#58;</b> Only the freshest and finest ingredients are used in our cakes and pastries.</li>
+                <li><b>Local&#58;</b> We support local farms where ever possible.</li>
+                <li><b>Passion&#58;</b> Our employees from pastry chef to delivery staff are committed in heart</li>
+            </div>
+        </div>
+    </div>
+    <div class="about_imgs">
+        <div class="text-center">
+            <img src="icons/dairy copy.png" alt="">
         </div>
     </div>
 </section>
@@ -162,7 +173,9 @@
                 <div class="footer_links d-flex" id="links">
                     <ul class="list pt-4 px-0">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#occasion">Occasion</a></li>
+                        <li class="cons" data-bs-toggle="modal" data-bs-target="#contactUs">
+                            <a href="#">Contact Us</a>
+                          </li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="#cakes">Cakes</a></li>
                         <li><a href="faq.html">FAQ</a></li>
@@ -235,6 +248,50 @@
         </button>
        </div>
     </div>
+  </div>
+</div>
+<!-- modal 2 contact us-->
+<div class="modal fade" id="contactUs"
+      tabindex="-1" aria-labelledby="contactUslabel"
+      aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger fs-3 fw-light" id="contactUslabel">
+           Contact Us</h5>
+            <button
+                type="button" 
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close">
+            </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-center">Please fill out this form to contact us and we'll get back to you within 24 hours.</p>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="col-form-label">
+              Name:
+            </label>
+            <input type="text" class="form-control" required id="name" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="col-form-label">Email:</label>
+            <input type="email" class="form-control" required id="email" />
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="col-form-label">Phone:</label>
+            <input type="number" class="form-control" required id="phone" />
+          </div>
+          <div>
+            <textarea cols="55" rows="7" placeholder="your message"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger"><a href="contactSuccess.html">Submit</button>
+       </div>
+      </div>
   </div>
 </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
