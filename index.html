@@ -51,6 +51,10 @@
                     <a class="nav-link text-uppercase text-dark" href="faq.html">
                       FAQ</a>
                   </li>
+                  <li class="nav-item px-2 py-2 border-0">
+                    <a class="nav-link text-danger text-uppercase" href="login.html">
+                      Account</a>
+                  </li>
             </ul>   
         </div>
     </nav>
@@ -325,7 +329,9 @@ data-bs-ride="carousel">
               <div class="footer_links d-flex" id="links">
                   <ul class="list pt-4 px-0">
                       <li><a href="#">Home</a></li>
-                      <li><a href="#occasion">Occasion</a></li>
+                      <li class="cons" data-bs-toggle="modal" data-bs-target="#contactUs">
+                        <a href="#">Contact Us</a>
+                      </li>
                       <li><a href="about.html">About Us</a></li>
                       <li><a href="#cakes">Cakes</a></li>
                       <li><a href="faq.html">FAQ</a></li>
@@ -343,15 +349,15 @@ data-bs-ride="carousel">
                   <h2 class="fw-bold footer-list-title text-danger">Contact Info</h2>
               </div>
               <div class="contact_details pt-4">
-                  <h4 class="mobile fw-bold">Mobile&#58;</h4>
+                  <h4 class="mobile">Mobile&#58;</h4>
                   <p>0915-125-4125 | 0915-125-4125</p>
-                  <h4 class="fw-bold">e-mail&#58;</h4>
+                  <h4 class="email">e-mail&#58;</h4>
                   <p>sweetcakealabama@hotmail.com</p>
-                  <h4 class="fw-bold">address&#58;</h4>
+                  <h4 class="address">address&#58;</h4>
                   <p>Muholland Drive, 10 Cloverfield Lane, Lost Highway City</p>
               </div>
               <div class="socials_footer">
-                  <p class="follow fw-bold">FOLLOW US&#58;</p>
+                  <p class="follow">FOLLOW US&#58;</p>
                   <a href="#"><i class="bi bi-facebook"></i></a>
                   <a href="#"><i class="bi bi-linkedin"></i></a>
                   <a href="#"><i class="bi bi-twitter"></i></a>
@@ -386,7 +392,7 @@ data-bs-ride="carousel">
             </button>
       </div>
       <div class="modal-body">
-        <p>Because you are one of our Subscriber-you will received rewards/points for every cake purchase.And you will be updated first to our latest cake flavors, discounts and promos.</p>
+        <p>You will be updated and will be receiving weekly email to our latest cake flavors, discounts and promos.</p>
         <span class="text-danger fs-4">Happy Shopping!</span>
       </div>
       <div class="modal-footer">
@@ -400,7 +406,53 @@ data-bs-ride="carousel">
     </div>
   </div>
 </div>
+
+<!-- modal 2 contact us-->
+<div class="modal fade" id="contactUs"
+      tabindex="-1" aria-labelledby="contactUslabel"
+      aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-danger fs-3 fw-light" id="contactUslabel">
+           Contact Us</h5>
+            <button
+                type="button" 
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close">
+            </button>
+      </div>
+      <div class="modal-body">
+        <p class="text-center">Please fill out this form to contact us and we'll get back to you within 24 hours.</p>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="col-form-label">
+              Name:
+            </label>
+            <input type="text" class="form-control" required id="name" />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="col-form-label">Email:</label>
+            <input type="email" class="form-control" required id="email" />
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="col-form-label">Phone:</label>
+            <input type="number" class="form-control" required id="phone" />
+          </div>
+          <div>
+            <textarea cols="55" rows="7" placeholder="your message"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-danger"><a href="contactSuccess.html">Submit</button>
+       </div>
+      </div>
+  </div>
+</div>
  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+ <script src="login.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

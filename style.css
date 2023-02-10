@@ -300,3 +300,136 @@ li {
         border-bottom: none!important;
     }
 }
+/* login page */
+.box-form {
+    margin: 15px auto;
+    width: 60vw;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: space-between;
+    box-shadow: 0 0 20px 2px var(--botton);
+    height: 75vh;
+}
+.exp {
+    font-size: 35px;
+    font-family: 'Marck Script', cursive;
+}
+.box-form .left {
+    color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-image: url(logo/bg2.jpg);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.box-form .left .overlay {
+    padding-top: 30px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box-form .left .overlay p {
+     color: #fff; 
+     font-family: 'Marck Script', cursive;
+     font-size: 22px;
+ }
+.box-form .right {
+    padding-left: 1vw;
+    overflow: hidden;
+    width: 30vw;
+    height: 100vh;
+    padding-right: 2vw;
+    padding-top: 2vh;   
+}
+.box-form .right h5 {
+    color: var(--botton);
+}
+.box-form .right input {
+    width: 100%;
+    padding: 12px 0 10px 0;
+    margin-top: 21px;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #b0b3b9;
+    margin-bottom: 5px;
+}
+.box-form .right .remember-me--forget-password {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.box-form .right .remember-me--forget-password input {
+    margin: 0;
+    width: auto;
+}
+.inputs i {
+    position: absolute;
+    font-size: 20px;
+    margin-left: -50px;
+    margin-top: 26px;
+    cursor: pointer;
+}
+label {
+    display: block;
+    position: relative;
+    font-size: 18px;
+}
+label span.text-checkbox {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.8s linear;
+}
+.btn_login a {
+    color: var(--light-color);
+}
+.box-form .right .btn_login {
+    margin-top: 10px;
+    float:right;
+    font-size: 16px;
+    padding: 8px 25px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    color: var(--light-color);
+    box-shadow: 1px 4px 5px 0 #050608a6; 
+    background-image: linear-gradient(135deg, #645cbb 10%, #ada2ff 100%);
+    transition: all 0.2s ease;
+}
+.box-form .right .btn_login:hover {
+    opacity: 0.8;
+    color: var(--light-color);
+}
+.container .logSuccess {
+    margin-top: 200px;
+}
+#footer_loginSuccess {
+    margin-top: 270px;
+}
+/* register new user */
+
+.box-form-reg {
+    margin: 15px auto;
+    width: 60vw;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px 2px #be72aef5;
+    height: 75vh;
+}
+.social_signup .fabgo i {
+    font-size: 20px;
+}
+.social_signup .fabgo a {
+    color: var(--black);
+    opacity: 0.6;
+    transition: all 0.2s ease;
+}
+.social_signup .fabgo a:hover {
+    opacity: 1;
+}
