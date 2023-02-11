@@ -433,3 +433,8 @@ label span.text-checkbox {
 .social_signup .fabgo a:hover {
     opacity: 1;
 }
+@media only screen and (min-width:570px) {
+    .box-form .left {
+        display: none;
+    }
+}
