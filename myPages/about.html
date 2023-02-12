@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Rhey Yu | Romeo Agacita">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="logo/cakelogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/logo/cakelogo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
@@ -17,48 +17,54 @@
 <body>
  <!-- Navbar section -->
  <div class="header">
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container menu-bar">
-        <button class="navbar-toggler" type="button" 
-              data-toggle="collapse" data-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" 
-              aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container menu-bar">
+      <button class="navbar-toggler" type="button" 
+            data-toggle="collapse" data-target="#navbarNav" 
+            aria-controls="navbarNav" aria-expanded="false" 
+            aria-label="Toggle navigation">
             <i class="fa-solid fa-bars"></i>
-        </button>
-          <a class="navbar-brand" href="index.html"><img src="logo/logo3.png"></a>
-            <div class="order-lg-1 nav_social">
-                <i class="fa fa-search"></i>
-                <i class="fa fa-shopping-cart"></i>
-                <i class="fa fa-user"></i>
-            </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto text-center fs-6 fw-bold pt-3">
-                  <li class="nav-item px-2 py-2 p">
-                    <a class="nav-link text-uppercase text-dark" href="#">
-                      Cakes</a>
-                  </li>
-                  <li class="nav-item px-2 py-2">
-                    <a class="nav-link text-uppercase text-dark"  href="category.html">
-                      Category</a>
-                  </li>
-                  <li class="nav-item px-2 py-2">
-                    <a class="nav-link text-uppercase text-dark" href="about.html">
-                      about us</a>
-                  </li>
-                  <li class="nav-item px-2 py-2 border-0">
-                    <a class="nav-link text-uppercase text-dark" href="faq.html">
-                      FAQ</a>
-                  </li>
-                  <li class="nav-item px-2 py-2 border-0">
-                    <a class="nav-link text-dark" href="login.html">
-                      Account</a>
-                  </li>
-            </ul>   
+      </button>
+        <a class="navbar-brand" href="index.html"><img src="/logo/logo3.png"></a>
+          <div class="order-lg-1 nav_social">
+              <i class="fa fa-search" id="search-icon"></i>
+              <i class="fa fa-shopping-cart"></i>
+              <i class="fa fa-user"></i>
+          </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto text-center fs-6 fw-bold pt-3">
+                <li class="nav-item px-2 py-2 p">
+                  <a class="nav-link text-uppercase text-dark" href="#">
+                    Cakes</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                  <a class="nav-link text-uppercase text-dark"  href="category.html">
+                    Category</a>
+                </li>
+                <li class="nav-item px-2 py-2">
+                  <a class="nav-link text-uppercase text-dark" href="about.html">
+                    about us</a>
+                </li>
+                <li class="nav-item px-2 py-2 border-0">
+                  <a class="nav-link text-uppercase text-dark" href="faq.html">
+                    FAQ</a>
+                </li>
+                <li class="nav-item px-2 py-2 border-0">
+                  <a class="nav-link text-danger text-uppercase" href="login.html">
+                    Account</a>
+                </li>
+          </ul>   
         </div>
-    </nav>
-  </div>
+      </div>
+  </nav>
 </div>
  <!-- navbar ends here -->
+  <!-- search Form -->
+  <form action="" id="search-form">
+    <input type="search" placeholder="Search your desired cake here..." id="search-box">
+    <label for="search-box" class="fas fa-search"></label>
+    <i class="fas fa-times" id="close"></i>
+  </form>
 <!-- featured Products -->
 <section class="about" id="about">
     <div class="container">
@@ -69,7 +75,7 @@
             <div class="row">
                 <div class="col-sm mb-4">
                     <div class="card text-center h-100">
-                        <img src="img/cake2.png" class="card-img-top" alt="cake_image">
+                        <img src="/cakeImage/cake2.png" class="card-img-top" alt="cake_image">
                         <div class="card-body">
                           <p class="card-text">Chocolate Frosting</p>
                         </div>
@@ -77,7 +83,7 @@
                 </div>
                 <div class="col-sm mb-4">
                     <div class="card text-center h-100 ">
-                        <img src="img/cake3.png" class="card-img-top img-fluid" alt="cake_image">
+                        <img src="/cakeImage/cake3.png" class="card-img-top img-fluid" alt="cake_image">
                         <div class="card-body">
                           <p class="card-text">Vanilla Raspberry n Cream</p>
                         </div>
@@ -85,7 +91,7 @@
                 </div>
                 <div class="col-sm mb-4">
                     <div class="card text-center h-100 ">
-                        <img src="img/cake4.png" class="card-img-top img-fluid" alt="cake_image">
+                        <img src="/cakeImage/cake4.png" class="card-img-top img-fluid" alt="cake_image">
                         <div class="card-body">
                           <p class="card-text">Salted Caramel</p>
                         </div>
@@ -93,7 +99,7 @@
                 </div>
                 <div class="col-sm mb-4">
                     <div class="card text-center h-100 ">
-                        <img src="img/cake8.png" class="card-img-top img-fluid" alt="cake_image">
+                        <img src="/cakeImage/cake8.png" class="card-img-top img-fluid" alt="cake_image">
                         <div class="card-body">
                           <p class="card-text">Peaches n Cream</p>
                         </div>
@@ -109,7 +115,7 @@
         <div class="row align-items-center justify-content-between">
             <div class="col-md">
                 <h2 class="fw-bold">About Us</h2>
-               <img src="icons/cakeingredients2.jpg" class="img-fluid" alt="">
+               <img src="/icons/cakeingredients2.jpg" class="img-fluid" alt="cakeingredients">
              </div>
             <div class="col-md">
                 <div class="about_details">
@@ -132,7 +138,7 @@
                 </div>
             </div>
             <div class="col-md">
-               <img src="icons/choco.png" class="img-fluid" alt="">
+               <img src="/icons/choco.png" class="img-fluid" alt="chocolateImage">
             </div>
         </div>
     </div>
@@ -153,7 +159,7 @@
     </div>
     <div class="about_imgs">
         <div class="text-center">
-           <img src="icons/dairy copy.png" class="img-fluid" alt="">
+           <img src="/icons/dairy copy.png" class="img-fluid" alt="logoImage">
         </div>
     </div>
 </section>
@@ -295,7 +301,7 @@
   </div>
 </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script src="script.js"></script>
-    <script src="login.js"></script>
+    <script src="/script/login.js"></script>
+    <script src="/script/script.js"></script>
 </body>
 </html>

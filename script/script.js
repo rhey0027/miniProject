@@ -32,6 +32,7 @@ window.onscroll = () => {
     document.querySelector('#search-form').classList.remove('active');
    }
 // back to top
+
 const backTopBtn = document.querySelector(".back-top-btn");
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 50) {
