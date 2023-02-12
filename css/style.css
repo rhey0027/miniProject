@@ -127,11 +127,9 @@ li {
 }
 /* best seller */
 .best_seller {
-    /* background-color: var(--fifth-color); */
-    background-image: url(logo/bg1.jpg);
+    background-image: url(/logo/bg1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover; 
 }
  #sweeter p,
  .subtitle {
@@ -321,7 +319,7 @@ li {
     color: #fff;
     background-size: cover;
     background-position: center;
-    background-image: url(logo/bg2.jpg);
+    background-image: url(/logo/bg2.jpg);
     background-repeat: no-repeat;
     overflow: hidden;
 }
