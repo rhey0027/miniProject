@@ -50,6 +50,10 @@
                     <a class="nav-link text-uppercase text-dark" href="faq.html">
                       FAQ</a>
                   </li>
+                  <li class="nav-item px-2 py-2 border-0">
+                    <a class="nav-link text-dark" href="login.html">
+                      Account</a>
+                  </li>
             </ul>   
         </div>
     </nav>
@@ -209,35 +213,35 @@
 <!-- footer -->
 <footer class="footer">
     <div class="container">
-        <div class="row">
+        <div class="row mx-sm-2 mx-md-0 ">
             <div class="col-lg-8 col-md-12 mb-4 mb-md-0">
-                <h2 class="fw-bolder pt-4">Subscribe Now!</h2>
-                <p class="lead">for the latest offer, promos & discount</p>
+                <h2 class="fw-bolder pt-4" id="subscribe">Subscribe Now!</h2>
+                <p class="">for the latest offer, promos & discount</p>
                  <input type="text" class="form-control-footer" placeholder="Enter Email"/>
-            <button class="btn_footer">
-                <i class="bi bi-chevron-right"></i>
-            </button>
-            <div class="footer_links d-flex">
-                <ul class="list pt-4 p-0">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#occasion">Occasion</a></li>
-                    <li><a href="#about us">About Us</a></li>
-                    <li><a href="#cakes">Cakes</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-                <ul class="list pt-4 list2">
-                    <li><a href="#Privacy Policy">Privacy Policy</a></li>
-                    <li><a href="#Legal">Legal</a></li>
-                    <li><a href="#Return & Refund">Return & Refund</a></li>
-                    <li><a href="#Order tracking">Order Tracing</a></li>
-                </ul>
+                <button class="btn_footer" data-bs-toggle="modal"
+                        data-bs-target="#subscribe2">
+                    <i class="bi bi-chevron-right"></i>
+                    <div class="tooltip">Submit</div>
+                </button>
+                <div class="footer_links d-flex" id="links">
+                    <ul class="list pt-4 px-0">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#occasion">Occasion</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#cakes">Cakes</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                    <ul class="list pt-4 list2">
+                        <li><a href="#Privacy Policy">Privacy Policy</a></li>
+                        <li><a href="#Legal">Legal</a></li>
+                        <li><a href="#Return & Refund">Return & Refund</a></li>
+                        <li><a href="#Order tracking">Order Tracing</a></li>
+                    </ul>
+                </div>
             </div>
-            </div>
-            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <div class="col-lg-4 col-md-12 ">
                 <div class="d-flex pt-4">
-                    <h2 class="fw-bold">Contact Info</h2>
-                    <p class="line mt-3 mx-2"></p>
-                    <p class="line2 mt-3"></p>
+                    <h2 class="fw-bold footer-list-title text-danger">Contact Info</h2>
                 </div>
                 <div class="contact_details pt-4">
                     <h4 class="mobile fw-bold">Mobile&#58;</h4>
@@ -259,9 +263,45 @@
     </div>
     <hr>
         <div class="lower_footer text-center fs-6">
-            <p class="copyright">&copy; 2023 | <a href="#home" class="text-primary">Sweet Cake Alabama</a> | Online Birthday Cake, Chocolate Cake and Corporate Cake Catering. Delivery in the Philippines</p>
-        </div>
-</footer>
+            <p class="copyright">&copy; 2023 | <a href="#home">Sweet Cake Alabama</a> | Online Birthday Cake, Chocolate Cake and Corporate Cake Catering. Delivery in the Philippines</p>
+        </div> 
+  </footer>
+ <!-- back to top -->
+ <a href="#top" class="back-top-btn" 
+                aria-label="back to top"
+                data-back-top-btn><ion-icon name="chevron-up" class="chevron_icon"></ion-icon></a>
+ <!-- modal section -->
+ <div class="modal fade" id="subscribe2"
+      tabindex="-1" aria-labelledby="subscribelabel"
+      aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="subscribelabel">
+          Thank you for Subscribing!</h5>
+            <button
+                type="button" 
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close">
+            </button>
+      </div>
+      <div class="modal-body">
+        <p>Because you are one of our Subscriber-you will received rewards/points for every cake purchase.And you will be updated first to our latest cake flavors, discounts and promos.</p>
+        <span class="text-danger fs-4">Happy Shopping!</span>
+      </div>
+      <div class="modal-footer">
+        <button 
+          type="button" 
+          class="btn btn-modal" id="btn-modal" 
+          data-bs-dismiss="modal">
+          Close
+        </button>
+       </div>
+    </div>
+  </div>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

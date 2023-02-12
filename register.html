@@ -25,7 +25,7 @@
     </nav>
 </div>
  <!-- navbar ends here -->
-<!-- login page -->
+<!-- Signup page -->
 <div class="container pt-1">
     <div class="box-form">
         <div class="left px-5 d-sm-none d-md-block w-100">
@@ -34,27 +34,26 @@
             </div>
         </div>
         <div class="right d-sm-block w-100 p-4">
-            <h5 class="fs-1 text-center">LOGIN</h5>
-            <p class="text-center fs-6 px-4" >Don't have an account?
-                <a href="register.html">Create Your Account</a>
-                    it only takes less than a minute
-            </p>
-            <div class="inputs">
+            <h5 class="fs-4 text-center">Register New User</h5>
+           <div class="inputs">
                 <form method="post" required="" name="myForm" onsubmit="return validateForm()">
-                    <input type="text" name="username"placeholder="Username" required >
+                    <input type="text" name="firstname"placeholder="First Name" required >
+                    <input type="text" name="lastname"placeholder="Last Name" required >
+                    <input type="text" name="email"placeholder="E-mail" required >
                     <input type="password" name="password" placeholder="Password" required id="password">
                     <i class="bi bi-eye-slash" id="togglePassword"></i>
-                    <div class="remember-me--forget-password">
-                    <label>
-                        <input type="checkbox" name="item" class="check">
-                        <span class="text-checkbox">Remember me</span>
-                    </label>
-                        <p><a href="#">Forget password?</a></p>
-                    </div>
-                   <button class="btn_login" type="submit" id="button">
-                    <a href="loginSucess.html">LOGIN</a>
-                    </button>
+                    <button class="btn_login" type="submit" id="button">
+                      <a href="registerSucess.html">LOGIN</a>
+                      </button>
                 </form>
+            </div>
+            <div class="social_signup pt-5">
+                <div class="fabgo mt-4">
+                    <div class="px-2 mb-3"><i class="fab fa-google"><a href="https://www.google.com/gmail"target="_blank" class="px-2">Sign in with google</a></i>
+                    </div>
+                    <div class="px-5 mb-3"><i class="fab fa-facebook"><a href="https://web.facebook.com/"target="_blank" class="px-2">Sign in with facebook</a></i>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -66,7 +65,6 @@
             <p class="copyright">&copy; 2023 | <a href="#home">Sweet Cake Alabama</a> | Online Birthday Cake, Chocolate Cake and Corporate Cake Catering. Delivery in the Philippines</p>
         </div> 
 </footer>
- <!-- modal section -->
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script src="login.js"></script>
 <script src="script.js"></script>
