@@ -30,8 +30,8 @@
           <a class="navbar-brand" href="index.html"><img src="/logo/logo3.png"></a>
             <div class="order-lg-1 nav_social">
                 <i class="fa fa-search" id="search-icon"></i>
-                <i class="fa fa-shopping-cart"></i>
                 <i class="fa fa-user"></i>
+                <i class="fa fa-shopping-cart text-bg-danger p-2 rounded-5"></i>
             </div>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mx-auto text-center fs-6 fw-bold pt-3">
@@ -40,8 +40,14 @@
                       Cakes</a>
                   </li>
                   <li class="nav-item px-2 py-2">
-                    <a class="nav-link text-uppercase text-dark"  href="category.html">
+                    <a class="nav-link dropdown-toggle text-uppercase text-dark" href="category.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Category</a>
+                      <ul class="dropdown fw-light" id="dropdown">
+                        <li><a href="#">Birthday Cakes</a></li>
+                        <li><a href="#">Weddings Cakes</a></li>
+                        <li><a href="#">Christening Cakes</a></li>
+                        <li><a href="#">Valentines Cakes</a></li>
+                      </ul>
                   </li>
                   <li class="nav-item px-2 py-2">
                     <a class="nav-link text-uppercase text-dark" href="about.html">
@@ -68,107 +74,132 @@
   <i class="fas fa-times" id="close"></i>
 </form>
 <!-- carousel section -->
-<div id="carouselFade" class="carousel slide carousel-fade"
-data-bs-ride="carousel">             
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="/cakeImage/cake25.jpg" class="d-block w-100" alt="cake_image">
+<div class="wallpaper">
+  <div id="carouselAutoplaying" class="carousel slide d-md w-50 d-lg w-50  mx-auto" data-bs-ride="carousel">
+    <div class="carousel-inner mx-auto py-5 pt-5">
+      <div class="carousel-item active">
+        <img src="/cakeImage/cakeslide2.jpg" class="d-block img-fluid" alt="cake_image">
+        <div class="carousel-caption d-md-block">
+          <h5 class="product_name d-none d-md-block fs-5 text-bg-info bg-opacity-50 text-light p-2 rounded-4">Frosted Chocolate with Red Berries</h5>
+          <div>
+            <a href="#" class="btn text-dark fw-bolder text-bg-warning  px-4 py-2 rounded-5 fs-5" id="btn_price">BUY ME NOW</a>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="/cakeImage/cake23.jpg" class="d-block w-100" alt="cake_image">
+      </div>
+      <div class="carousel-item">
+        <img src="/cakeImage/cakeslide3.jpg" class="img-fluid" alt=""cake_image>
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="product_name fs-5 text-bg-info bg-opacity-50 text-light p-2 rounded-4">Natural ube flavor fondant</h5>
+          <div>
+            <a href="#" class="btn text-dark fw-bolder text-bg-warning  px-4 py-2 rounded-5 fs-5" id="btn_price">BUY ME NOW</a>
+          </div>
         </div>
-        <div class="carousel-item">
-          <img src="/cakeImage/cake24.jpg" class="d-block w-100" alt="cake_image">
+      </div>
+      <div class="carousel-item">
+        <img src="/cakeImage/cakeslide4.jpg" class="img-fluid" alt="cake_image">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="product_name fs-5 text-bg-info bg-opacity-50 text-light p-2 rounded-4">Full chocate inside out</h5>
+          <div>
+            <a href="#" class="btn text-dark fw-bolder text-bg-warning  px-4 py-2 rounded-5 fs-5" id="btn_price">BUY ME NOW</a>
+          </div>
         </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/valentinesCakes/slide4.jpg" class="img-fluid" alt="cake_image">
+      </div>
+      <div class="carousel-item">
+        <img src="/valentinesCakes/slide3.jpg" class="img-fluid" alt="cake_image">
+      </div>
+      <div class="carousel-item">
+        <img src="/valentinesCakes/slide2.jpg" class="img-fluid" alt="cake_image">
+      </div>
+      <div class="carousel-item">
+        <img src="/valentinesCakes/slide1.jpg" class="img-fluid" alt="cake_image">
+      </div>
     </div>
-    <button class="carousel-control-prev"
-            type="button"data-bs-target="#carouseFade" 
-            data-bs-slide="prev">
-    </button>  
-    <button class="carousel-control-next"
-            type="button"data-bs-target="#carouselFade" 
-            data-bs-slide="next">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
     </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 </div>
-<!-- carousel ends here -->
 <!-- our best seller -->
 <section class="best_seller">
-     <h3 class="best_seller pt-5 text-center text-light fw-bold">OUR BEST SELLER</h3>
-     <div id="sweeter">
-      <p class="best_seller_quote fs-1 text-center text-warning fw-bold">"Making every Celebration Sweeter"</p>
-     </div>
+      <h2 class="best_sellerJ_title fs-1 fw-bold text-light text-center pt-4">Our Best Seller</h2>
+      <p class="best_seller_subhead text-center fs-3 text-warning fw-semibold">Cake me to your heart</p>
      <div class="container pt-5 text-center fw-bold">
-          <div class="row text-center g-4">
-            <div class="col-md mb-4">
-              <div class="card text-center h-100 mb-0">
-                <div class="img_heart">
-                  <img src="/cakeImage/cake3.png" class="card-img mx-auto w-75" alt="cake_image">
-                  <a href="#" class="fas fa-heart"></a>
-                  </div>
-                 <div class="card-body pb-0 pt-0 mb-0">
-                    <div class="stars text-danger fs-3">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                    </div>
-                      <p class="card_title fs-4">Chocolate with Red Velvet cream and almond nuts</p>
-                      <p class="subtitle text-danger fs-3 pb-0 pt-0 mb-0 fw-lighter">All the love in the world<p>                    
-                  </div>
-                    <span class="fw-bold fs-4">P800.00</span> <del>P1,200.00</del>
-                    <div>
-                      <a href="#" class="btn text-light fw-bolder mb-5" id="btn_price">ADD TO CART</a>
-                    </div>
+      <div class="row">
+        <div class="col-md mb-4">
+          <div class="card text-center h-100 ">
+            <div class="img_heart">
+              <img src="/cakeImage/cake3.png" class="card-img mx-auto w-75" alt="cake_image">
+              <a href="#" class="fas fa-heart"></a>
+            </div>            
+            <div class="card-body">
+                <div class="stars text-danger fs-5">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
               </div>
-          </div>
-            <div class="col-md mb-4">
-              <div class="card text-center h-100 ">
-                <div class="img_heart">
-                  <img src="/cakeImage/cake9.png" class="card-img mx-auto w-75" alt="cake_image">
-                 <a href="#" class="fas fa-heart"></a>
+                <p class="card_title fs-4">Red Velvet Chocolate creamy with almond nuts</p>
+              </div>
+                <span class="fw-bold fs-3">P1,045.00</span> <del>P1,380.00</del>
+                <div>
+                  <a href="#" class="btn text-light fw-bolder mb-5" id="btn_price">ADD TO CART</a>
                 </div>
-                  <div class="card-body">
-                    <div class="stars text-danger fs-3">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                  </div>
-                    <p class="card_title fs-4">Almond Cocoa Hazelnul with gummy bear</p>
-                    <p class="subtitle text-danger fs-3 mb-0 fw-lighter">Best of both worlds<p>        
-                  </div>
-                    <span class="fw-bold fs-4">P1,270.00</span> <del>P1,570.00</del>
-                    <div>
-                      <a href="#" class="btn text-light fw-bolder mb-5" id="btn_price">ADD TO CART</a>
-                    </div>
-              </div>
           </div>
-            <div class="col-md mb-4">
-              <div class="card text-center h-100 ">
-                <div class="img_heart">
-                  <img src="/cakeImage/cake6.png" class="card-img mx-auto w-75" alt="cake_image">
-                  <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="col-md mb-4">
+          <div class="card text-center h-100 ">
+            <div class="img_heart">
+              <img src="/cakeImage/cake2.png" class="card-img mx-auto w-75" alt="cake_image">
+              <a href="#" class="fas fa-heart"></a>
+            </div>
+             <div class="card-body">
+                <div class="stars text-danger fs-5">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+                <p class="card_title fs-4">Vanilla Chocolate top with gummy bear</p>  
+              </div>
+                <span class="fw-bold fs-3">P520.00</span> <del>P740.00</del>
+                <div>
+                  <a href="#" class="btn text-light fw-bolder mb-5" id="btn_price">ADD TO CART</a>
                 </div>
-                 <div class="card-body">
-                    <div class="stars text-danger fs-3">
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                      <i class="fas fa-star"></i>
-                  </div>
-                    <p class="card_title fs-4">Vanilla Raspberry n Cream top with red berries</p>
-                    <p class="subtitle text-danger fs-3 mb-0 fw-lighter">Round n Round we go<p>    
-                  </div>
-                    <span class="fw-bold fs-4">P950.00</span> <del>P1,100.00</del>
-                    <div>
-                      <a href="#" class="btn text-light fw-bolder mb-5" id="btn_price">ADD TO CART</a>
-                    </div>
-              </div>
           </div>
-        </div>
+      </div>
+        <div class="col-md mb-4">
+          <div class="card text-center h-100 ">
+            <div class="img_heart">
+              <img src="/cakeImage/cake4.png" class="card-img mx-auto w-75" alt="cake_image">
+              <a href="#" class="fas fa-heart"></a>
+            </div>
+             <div class="card-body">
+                <div class="stars text-danger fs-5">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+                <p class="card_title fs-4">Raspberry Red Velvet with berries</p> 
+              </div>
+                <span class="fw-bold fs-3">P980.00</span> <del>P1,350.00</del>
+                <div>
+                  <a href="#" class="btn text-light fw-bolder mb-5" id="btn_price">ADD TO CART</a>
+                </div>
+            </div>
+          </div>
+      </div>
         <div class="row">
           <div class="col-md mb-4">
             <div class="card text-center h-100 ">
@@ -177,17 +208,16 @@ data-bs-ride="carousel">
                 <a href="#" class="fas fa-heart"></a>
               </div>
               <div class="card-body">
-                  <div class="stars text-danger fs-3">
+                  <div class="stars text-danger fs-5">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                  <p class="card_title fs-4">Espresso Cafe</p>
-                  <p class="subtitle text-danger fs-3 mb-0 fw-lighter">Not just coffee in the morning<p>    
+                  <p class="card_title fs-4 my-0">Espresso Cafe</p>
                 </div>
-                  <span class="fw-bold fs-4">P745.00</span> <del>P980.00</del>
+                  <span class="fw-bold fs-3">P745.00</span> <del>P980.00</del>
                   <div>
                     <a href="#" class="btn text-light fw-bolder mb-5" id="btn_price">ADD TO CART</a>
                   </div>
@@ -200,17 +230,16 @@ data-bs-ride="carousel">
                 <a href="#" class="fas fa-heart"></a>
               </div>
               <div class="card-body">
-                  <div class="stars text-danger fs-3">
+                  <div class="stars text-danger fs-5">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                 </div>
-                  <p class="card_title fs-4">Peaches n Cream</p>
-                  <p class="subtitle text-danger fs-3 fw-lighter">partner in crimes with ice cream<p>    
+                  <p class="card_title fs-4">Peaches n Cream</p> 
                 </div>
-                  <span class="fw-bold fs-4">P1,220.00</span> <del>P1,340.00</del>
+                  <span class="fw-bold fs-3">P1,220.00</span> <del>P1,340.00</del>
                   <div>
                     <a href="#" class="btn text-light fw-bolder mb-5" id="btn_price">ADD TO CART</a>
                   </div>
@@ -223,7 +252,7 @@ data-bs-ride="carousel">
                 <a href="#" class="fas fa-heart"></a>
               </div>
                 <div class="card-body">
-                  <div class="stars text-danger fs-3">
+                  <div class="stars text-danger fs-5">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
@@ -231,9 +260,8 @@ data-bs-ride="carousel">
                     <i class="fas fa-star"></i>
                 </div>
                   <p class="card_title fs-4">Salted Caramel on a sunny day</p>
-                  <p class="subtitle text-danger fs-3 fw-lighter">Follow your cravings<p>                    
                 </div>
-                  <span class="fw-bold fs-4">P680.00</span> <del>P820.00</del>
+                  <span class="fw-bold fs-3">P680.00</span> <del>P820.00</del>
                   <div>
                     <a href="#" class="btn text-light fw-bolder mb-5" id="btn_price">ADD TO CART</a>
                   </div>
@@ -248,7 +276,7 @@ data-bs-ride="carousel">
               <a href="#" class="fas fa-heart"></a>
             </div>            
             <div class="card-body">
-                <div class="stars text-danger fs-3">
+                <div class="stars text-danger fs-5">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
@@ -256,9 +284,8 @@ data-bs-ride="carousel">
                   <i class="fas fa-star"></i>
               </div>
                 <p class="card_title fs-4">Strawberry Pink Champagne</p>
-                <p class="subtitle text-danger fs-3 pb-0 pt-0 fw-lighter">hundred islands<p>    
               </div>
-                <span class="fw-bold fs-4">P1,045.00</span> <del>P1,380.00</del>
+                <span class="fw-bold fs-3">P1,045.00</span> <del>P1,380.00</del>
                 <div>
                   <a href="#" class="btn text-light fw-bolder mb-5" id="btn_price">ADD TO CART</a>
                 </div>
@@ -271,17 +298,16 @@ data-bs-ride="carousel">
               <a href="#" class="fas fa-heart"></a>
             </div>
              <div class="card-body">
-                <div class="stars text-danger fs-3">
+                <div class="stars text-danger fs-5">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
               </div>
-                <p class="card_title fs-4">Tremendously Strawberry</p>
-                <p class="subtitle text-danger fs-3 pb-0 pt-0 fw-lighter">It's your day today?<p>    
+                <p class="card_title fs-4">Tremendously Strawberry</p>  
               </div>
-                <span class="fw-bold fs-4">P520.00</span> <del>P740.00</del>
+                <span class="fw-bold fs-3">P520.00</span> <del>P740.00</del>
                 <div>
                   <a href="#" class="btn text-light fw-bolder mb-5" id="btn_price">ADD TO CART</a>
                 </div>
@@ -294,17 +320,16 @@ data-bs-ride="carousel">
               <a href="#" class="fas fa-heart"></a>
             </div>
              <div class="card-body">
-                <div class="stars text-danger fs-3">
+                <div class="stars text-danger fs-5">
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
               </div>
-                <p class="card_title fs-4">Lemon Raspberry n Cream</p>
-                <p class="subtitle text-danger fs-3 pb-0 pt-0 fw-lighter">Always be my baby creamy<p>    
+                <p class="card_title fs-4">Lemon Raspberry n Cream</p> 
               </div>
-                <span class="fw-bold fs-4">P980.00</span> <del>P1,350.00</del>
+                <span class="fw-bold fs-3">P980.00</span> <del>P1,350.00</del>
                 <div>
                   <a href="#" class="btn text-light fw-bolder mb-5" id="btn_price">ADD TO CART</a>
                 </div>
@@ -312,6 +337,299 @@ data-bs-ride="carousel">
           </div>
       </div>
   </div>    
+</section>
+<!-- feb valentines treat -->
+<section class="valentines">
+  <section class="feb_treat">
+    <h2 class="best_seller_title fs-1 fw-bold text- text-bg-light bg-opacity-50 text-center pt-4">Our Feb Valentines Treat</h2>
+    <p class="best_seller_subhead text-center fs-1 text-light fw-semibold">Cake me to your heart</p>
+  <div class="container pt-5 text-center fw-bold">
+    <div class="row">
+      <div class="col-md mb-4">
+        <div class="card text-center h-100 shadow p-3">
+          <div class="img_heart">
+            <img src="/valentinesCakes/c1.png" class="card-img mx-auto w-75" alt="cake_image">
+            <a href="#" class="fas fa-heart"></a>
+          </div>            
+          <div class="card-body">
+              <div class="stars text-danger fs-5">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+              <p class="card_title fs-4">Red Velvet Chocolate creamy with almond nuts</p>
+            </div>
+              <span class="fw-bold fs-3">P1,045.00</span> <del>P1,380.00</del>
+              <div>
+                <a href="#" class="btn text-light text-bg-danger fw-bolder mb-5" id="btn_price">ADD TO CART</a>
+                <a href="#" class="btn text-light text-bg-primary mx-3 fw-bolder mb-5" id="btn_price">BUY ME NOW</a>
+              </div>
+        </div>
+    </div>
+    <div class="col-md mb-4">
+        <div class="card text-center h-100 shadow p-3">
+          <div class="img_heart">
+            <img src="/valentinesCakes/c2.png" class="card-img mx-auto w-75" alt="cake_image">
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+           <div class="card-body">
+              <div class="stars text-danger fs-5">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+              <p class="card_title fs-4">Vanilla Chocolate top with gummy bear</p>  
+            </div>
+              <span class="fw-bold fs-3">P520.00</span> <del>P740.00</del>
+              <div>
+                <a href="#" class="btn text-light text-bg-danger fw-bolder mb-5" id="btn_price">ADD TO CART</a>
+                <a href="#" class="btn text-light text-bg-primary mx-3 fw-bolder mb-5" id="btn_price">BUY ME NOW</a>
+              </div>
+        </div>
+    </div>
+      <div class="col-md mb-4">
+        <div class="card text-center h-100 shadow p-3">
+          <div class="img_heart">
+            <img src="/valentinesCakes/c3.png" class="card-img mx-auto w-75" alt="cake_image">
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+           <div class="card-body">
+              <div class="stars text-danger fs-5">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+              <p class="card_title fs-4">Raspberry Red Velvet with berries</p> 
+            </div>
+              <span class="fw-bold fs-3">P980.00</span> <del>P1,350.00</del>
+              <div>
+                <a href="#" class="btn text-light text-bg-danger fw-bolder mb-5" id="btn_price">ADD TO CART</a>
+                <a href="#" class="btn text-light text-bg-primary mx-3 fw-bolder mb-5" id="btn_price">BUY ME NOW</a>
+              </div>
+          </div>
+        </div>
+    </div>
+      <div class="row">
+        <div class="col-md mb-4">
+          <div class="card text-center h-100 shadow p-3 ">
+            <div class="img_heart">
+              <img src="/valentinesCakes/c4.png" class="card-img mx-auto w-75" alt="cake_image">
+              <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="card-body">
+                <div class="stars text-danger fs-5">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+                <p class="card_title fs-4 my-0">Espresso Cafe</p>
+              </div>
+                <span class="fw-bold fs-3">P745.00</span> <del>P980.00</del>
+                <div>
+                  <a href="#" class="btn text-light text-bg-danger fw-bolder mb-5" id="btn_price">ADD TO CART</a>
+                  <a href="#" class="btn text-light text-bg-primary mx-3 fw-bolder mb-5" id="btn_price">BUY ME NOW</a>
+                </div>
+          </div>
+      </div>
+      <div class="col-md mb-4">
+          <div class="card text-center h-100 shadow p-3 ">
+            <div class="img_heart">
+              <img src="/valentinesCakes/c5.png" class="card-img mx-auto w-75"     alt="cake_image">
+              <a href="#" class="fas fa-heart"></a>
+            </div>
+            <div class="card-body">
+                <div class="stars text-danger fs-5">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+                <p class="card_title fs-4">Peaches n Cream</p> 
+              </div>
+                <span class="fw-bold fs-3">P1,220.00</span> <del>P1,340.00</del>
+                <div>
+                  <a href="#" class="btn text-light text-bg-danger fw-bolder mb-5" id="btn_price">ADD TO CART</a>
+                  <a href="#" class="btn text-light text-bg-primary mx-3 fw-bolder mb-5" id="btn_price">BUY ME NOW</a>
+                </div>
+          </div>
+      </div>
+        <div class="col-md mb-4">
+          <div class="card text-center h-100 shadow p-3">
+            <div class="img_heart">
+              <img src="/valentinesCakes/c6.png" class="card-img mx-auto w-75" alt="cake_image">
+              <a href="#" class="fas fa-heart"></a>
+            </div>
+              <div class="card-body">
+                <div class="stars text-danger fs-5">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+                <p class="card_title fs-4">Salted Caramel on a sunny day</p>
+              </div>
+                <span class="fw-bold fs-3">P680.00</span> <del>P820.00</del>
+                <div>
+                  <a href="#" class="btn text-light text-bg-danger fw-bolder mb-5" id="btn_price">ADD TO CART</a>
+                  <a href="#" class="btn text-light text-bg-primary mx-3 fw-bolder mb-5" id="btn_price">BUY ME NOW</a>
+                </div>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md mb-4">
+        <div class="card text-center h-100 shadow p-3">
+          <div class="img_heart">
+            <img src="/valentinesCakes/c7.png" class="card-img mx-auto w-75" alt="cake_image">
+            <a href="#" class="fas fa-heart"></a>
+          </div>            
+          <div class="card-body">
+              <div class="stars text-danger fs-5">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+              <p class="card_title fs-4">Strawberry Pink Champagne</p>
+            </div>
+              <span class="fw-bold fs-3">P1,045.00</span> <del>P1,380.00</del>
+              <div>
+                <a href="#" class="btn text-light text-bg-danger fw-bolder mb-5" id="btn_price">ADD TO CART</a>
+                <a href="#" class="btn text-light text-bg-primary mx-3 fw-bolder mb-5" id="btn_price">BUY ME NOW</a>
+              </div>
+        </div>
+    </div>
+    <div class="col-md mb-4">
+        <div class="card text-center h-100 shadow p-3">
+          <div class="img_heart">
+            <img src="/valentinesCakes/c8.png" class="card-img mx-auto w-75" alt="cake_image">
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+           <div class="card-body">
+              <div class="stars text-danger fs-5">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+              <p class="card_title fs-4">Tremendously Strawberry</p>  
+            </div>
+              <span class="fw-bold fs-3">P520.00</span> <del>P740.00</del>
+              <div>
+                <a href="#" class="btn text-light text-bg-danger fw-bolder mb-5" id="btn_price">ADD TO CART</a>
+                <a href="#" class="btn text-light text-bg-primary mx-3 fw-bolder mb-5" id="btn_price">BUY ME NOW</a>
+              </div>
+        </div>
+    </div>
+      <div class="col-md mb-4">
+        <div class="card text-center h-100 shadow p-3">
+          <div class="img_heart">
+            <img src="/valentinesCakes/c9.png" class="card-img mx-auto w-75" alt="cake_image">
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+           <div class="card-body">
+              <div class="stars text-danger fs-5">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+              <p class="card_title fs-4">Lemon Raspberry n Cream</p> 
+            </div>
+              <span class="fw-bold fs-3">P980.00</span> <del>P1,350.00</del>
+              <div>
+                <a href="#" class="btn text-light text-bg-danger fw-bolder mb-5" id="btn_price">ADD TO CART</a>
+                <a href="#" class="btn text-light text-bg-primary mx-3 fw-bolder mb-5" id="btn_price">BUY ME NOW</a>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="row">
+    <div class="col-md mb-4">
+      <div class="card text-center h-100 shadow p-3">
+        <div class="img_heart">
+          <img src="/valentinesCakes/c10.png" class="card-img mx-auto w-75" alt="cake_image">
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+          <div class="card-body">
+            <div class="stars text-danger fs-5">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+          </div>
+            <p class="card_title fs-4">Pinkie Flowers in the middle</p> 
+          </div>
+            <span class="fw-bold fs-3">P780.00</span> <del>P1,350.00</del>
+            <div>
+              <a href="#" class="btn text-light text-bg-danger fw-bolder mb-5" id="btn_price">ADD TO CART</a>
+              <a href="#" class="btn text-light text-bg-primary mx-3 fw-bolder mb-5" id="btn_price">BUY ME NOW</a>
+            </div>
+        </div>
+      </div>
+      <div class="col-md mb-4">
+        <div class="card text-center h-100 shadow p-3">
+          <div class="img_heart">
+            <img src="/valentinesCakes/c12.png" class="card-img mx-auto w-75" alt="cake_image">
+            <a href="#" class="fas fa-heart"></a>
+          </div>
+            <div class="card-body">
+              <div class="stars text-danger fs-5">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+              <p class="card_title fs-4">Creamy Milky Taste</p> 
+            </div>
+              <span class="fw-bold fs-3">P540.00</span> <del>P1,350.00</del>
+              <div>
+                <a href="#" class="btn text-light text-bg-danger fw-bolder mb-5" id="btn_price">ADD TO CART</a>
+                <a href="#" class="btn text-light text-bg-primary mx-3 fw-bolder mb-5" id="btn_price">BUY ME NOW</a>
+              </div>
+          </div>
+        </div>
+        <div class="col-md mb-4">
+          <div class="card text-center h-100 shadow p-3">
+            <div class="img_heart">
+              <img src="/valentinesCakes/c1.png" class="card-img mx-auto w-75" alt="cake_image">
+              <a href="#" class="fas fa-heart"></a>
+            </div>
+              <div class="card-body">
+                <div class="stars text-danger fs-5">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div>
+                <p class="card_title fs-4">Round Vanilla Cream</p> 
+              </div>
+                <span class="fw-bold fs-3">P580.00</span> <del>P1,350.00</del>
+              <div>
+                <a href="#" class="btn text-light text-bg-danger fw-bolder mb-5" id="btn_price">ADD TO CART</a>
+                <a href="#" class="btn text-light text-bg-primary mx-3 fw-bolder mb-5" id="btn_price">BUY ME NOW</a>
+              </div>
+        </div>
+    </div>
+  </div>
+</div>    
+</section>
 </section>
 <!-- footer -->
 <footer class="footer">
