@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -247,6 +247,10 @@ ul li:hover ul.dropdown {display: block;}
     opacity: 1;
     transition: all 0.3s ease;
 }
+.payment img {
+    margin-top: -30px;
+    margin-left: 100px;
+}
 .bi-chevron-right:hover {color: orangered;}
 /* back to top */
 .back-top-btn {
@@ -276,11 +280,6 @@ ul li:hover ul.dropdown {display: block;}
  #btn-modal:hover {
     background-color: #a862e9;
  }
-@media only screen and (max-width: 1000px) {
-    .nav-link:hover{
-        border-bottom: none!important;
-    }
-}
 /* login page */
 .box-form {
     margin: 15px auto;
@@ -401,6 +400,12 @@ label span.text-checkbox {
     transition: all 0.2s ease;
 }
 .social_signup .fabgo a:hover {opacity: 1;}
+/* rwd */
+@media only screen and (max-width: 1000px) {
+    .nav-link:hover{
+        border-bottom: none!important;
+    }
+}
 @media only screen and (min-width:570px) {
     .box-form .left {
         display: none;
