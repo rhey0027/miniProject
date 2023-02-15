@@ -189,6 +189,20 @@ ul li:hover ul.dropdown {
     background-color:red;
     color: var(--light-color);
 }
+/* category section*/
+#bdaycake p {
+   font-family: 'Marck Script', cursive;
+   padding-top: 40px;
+}
+
+.category {
+    /* background-color: var(--fifth-color); */
+    background-image: url(logo/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+/* end of category section*/
+
 /* about us */
 .about,
 .featured_products {
